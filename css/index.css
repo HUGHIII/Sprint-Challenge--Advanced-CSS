@@ -270,6 +270,14 @@ footer {
   background-color: white;
   color: #423e3e;
 }
+@media (max-width:500px) {
+  .home .walk .walk-text .btn {
+    width: 100%;
+    text-align: center;
+    padding: 5%;
+    background-color: #0d0d52;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
