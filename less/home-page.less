@@ -4,6 +4,12 @@
 
   .intro {
 
+    .headImg {
+      @media @mobile {
+        width:48rem;
+      }
+    }
+
     h2 {
       padding: 15px;
     }
@@ -18,6 +24,24 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+
+    @media @mobile {
+      
+      
+      .blast {
+        width:90%;
+        padding-left:3%;
+      }
+      
+      
+      
+      .sky{
+        display: none;
+      }
+      .launch{
+        display: none;
+      }
+    }
 
     img {
       width: 28%;
@@ -37,6 +61,8 @@
     p {
       margin-top: 13px;
     }
+
+    margin-bottom: -5%;
   }
 
   .walk {
@@ -46,8 +72,20 @@
     display: flex;
     justify-content: center;
 
+  @media @mobile {
+          flex-direction: column-reverse;
+          
+        }
+
     .walk-text {
       width: 50%;
+
+      @media @mobile {
+        .mobileBottomContent();
+        padding-top: 3%;
+      }
+
+      
 
       h3 {
         margin-bottom: 10px;
@@ -58,12 +96,24 @@
       }
 
       .btn {
+
+  .mixinBtn(1px solid rgb(66, 62, 62), white, rgb(66, 62, 62), 1.8rem, 2% 2% 2% 3%, .5rem, 75%);
+        &:hover{
+          background-color :white;
+          color: rgb(66, 62, 62);
+
+        }
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @mobile {
+     .mobileBottomContent();
+     margin-top:-8%;
+      }
       
       img {
         width: 100%;

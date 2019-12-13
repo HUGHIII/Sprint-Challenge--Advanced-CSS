@@ -1,1 +1,31 @@
 // Mixins Here
+
+
+.mixinFlexCenter(){
+    display: flex;
+    justify-content: center;
+}
+
+.mobileBottomContent(){
+    width:43rem;
+        margin-left: -10%;
+}
+
+
+.mixinBtn(@bord, @clr, @bckClr, @fntSz, @pad, @bordRad, @margR){
+    border: @bord;
+    color: @clr;
+    background-color: @bckClr;
+    font-size: @fntSz ;
+    padding: @pad;
+    border-radius:@bordRad ;
+    margin-right:@margR ;
+}
+
+// border: 1px solid rgb(66, 62, 62);
+// color: white;
+// background-color: rgb(66, 62, 62);
+// font-size: 1.8rem;
+// padding:2% 2% 2% 3%;
+// border-radius: .5rem;
+// margin-right: 75%;
